@@ -17,41 +17,61 @@
       <li class="site-navigation-item"><a href="#">Контакты</a> </li>
     </ul>
     <ul class="user-navigation">
-      <li class="user-navigation-item">Корзина</li>
-    </ul>
+        <li class="user-navigation-item">
+          <a class="basket" href="#">Корзина</a>
+          </li>
+      </ul>
   </nav>
 </header>
 <main>
-  <h1 class="shop_title">Магазин готовых шаблонов</h1>
+  <h1 class="shop-title">Магазин готовых шаблонов</h1>
   <section class="filters">
-    <h2 class="filters-caption">Сетка</h2>
-    <ul class="filters-list">
-      <li class="filters-item"><a class="button">Адаптивная</a> 
-      </li>
-      <li class="filters-item"><a class="button">Фиксированная</a> 
-      </li>
-      <li class="filters-item"><a class="button">Резиновая</a> 
-      </li>
-    </ul>
-    <h2 class="filters-caption">Особенности</h2>
-    <ul class="filters-list">
-      <li class="filters-item">
-        <a class="button">Слайдер</a> 
-      </li>
-      <li class="filters-item">
-        <a class="button">Блок преимуществ</a> 
-      </li>
-      <li class="filters-item">
-        <a class="button">Новости</a> 
-      </li>
-      <li class="filters-item">
-        <a class="button">Галерея</a> 
-      </li>
-      <li class="filters-item">
-        <a class="button">Корзина</a> 
-      </li>
-    </ul>
-    <span class="button">Показать</span>
+     <h2 class="visually-hidden">Фильтры для подбора сайта</h2>
+     <form class="filters" method="get" action="#">
+       <fieldset class="filters-grid">
+         <legend class="filters-grid-caption">Сетка</legend>
+         <ul class="filters-grid-list">
+           <li class="filters-grid-item">
+             <input class="filters-grid-input" type="radio" name="filters-grid-radio" value="adaptive" id="filter-adaptive">
+             <label for="filter-adaptive">Адаптивная</label>
+           </li>
+           <li class="filters-grid-item">
+             <input class="filters-grid-input" type="radio" name="filters-grid-radio" value="fixed" id="filter-fixed">
+             <label for="filter-fixed">Фиксированная</label>
+           </li>
+           <li class="filters-grid-item">
+             <input class="filters-grid-input" type="radio" name="filters-grid-radio" value="rubber" id="filter-rubber">
+             <label for="filter-rubber">Резиновая</label>
+           </li>
+         </ul>
+        </fieldset>
+        <fieldset class="filters-features">
+          <legend class="filters-features-caption">Особенности</h2>
+          <ul class="filters-features-list">
+           <li class="filters-features-item">
+              <input class="filters-features-item" type="checkbox" name="slider" id="filter-slider" checked>
+              <label for="filter-slider">Слайдер</label>
+           </li>
+           <li class="filters-features-item">
+             <input class="filters-features-item" type="checkbox" name="advantage-block" id="filter-advantage-block">
+             <label for="filter-advantage-block">Блок преимуществ</label>
+           </li>
+           <li class="filters-features-item">
+             <input class="filters-features-item" type="checkbox" name="news" id="filter-news" checked>
+             <label for="filter-news">Новости</label> 
+           </li>
+           <li class="filters-features-item">
+             <input class="filters-features-item" type="checkbox" name="gallery" id="filter-gallery">
+             <label for="filter-gallery">Галерея</label>
+           </li>
+           <li class="filters-features-item">
+             <input class="filters-features-item" type="checkbox" name="basket" id="filter-basket">
+             <label for="filter-basket">Корзина</label>
+            </li>
+         </ul>
+       </fieldset>
+       <button type="submit" class="filter-button button">Показать</button>
+   </form>
   </section>
   <section class="catalog">
     <ul class="catalog-list">
@@ -60,7 +80,7 @@
          <div class="catalog-item-content">
           <h3 class="catalog-heading">Sedona</h3>
           <p class="catalog-text">Информационный сайт для туристов</p>
-          <a class="button">9900 РУБ.</a>
+          <a class="button" href="#">9900 РУБ.</a>
         </div>
       </li>
       <li class="catalog-item">
@@ -69,7 +89,7 @@
           <h3 class="catalog-heading">Барбершоп</h3>
           <p class="catalog-text">Сайт салона красоты.
               Для мужчин, да.</p>
-          <a class="button">9900 РУБ.</a>
+              <a class="button" href="#">9900 РУБ.</a>
          </div>
         </li>
       <li class="catalog-item">
@@ -77,7 +97,7 @@
          <div class="catalog-item-content">
           <h3 class="catalog-heading">А+</h3>
           <p class="catalog-text">Лендинг курсов повышения квалификации</p>
-          <a class="button">9900 РУБ.</a>
+          <a class="button" href="#">9900 РУБ.</a>
         </div>
       </li>
       <li class="catalog-item">
@@ -86,7 +106,7 @@
           <h3 class="catalog-heading">Pink</h3>
           <p class="catalog-text">Продуктовый лендинг
               приложения для iOS и Android</p>
-          <a class="button">9900 РУБ.</a>
+              <a class="button" href="#">9900 РУБ.</a>
          </div> 
       </li>
       <li class="catalog-item">
@@ -95,7 +115,7 @@
           <h3 class="catalog-heading">Mishka</h3>
           <p class="catalog-text">Интернет-магазин 
               вязаных игрушек</p>
-          <a class="button">9900 РУБ.</a>
+              <a class="button" href="#">9900 РУБ.</a>
         </div>
       </li>
       <li class="catalog-item">
@@ -104,7 +124,7 @@
           <h3 class="catalog-heading">Кваст</h3>
           <p class="catalog-text">Промо-сайт производителя
               крафтового кваса</p>
-          <a class="button">9900 РУБ.</a>
+              <a class="button" href="#">9900 РУБ.</a>
         </div>
       </li>
     </ul>
@@ -113,6 +133,17 @@
 
 </main>
 <footer class="main-footer">
+    <form class="write-us-form" action="http://echo" method="POST">
+      <legend class="write-us">Напишите нам</legend>
+        <label for="name">Ваше имя:</label>
+        <div class="write-us-box">
+          <input type="text" name="name" required id="name">
+        <label for="email">Ваш e-mail:</label>
+          <input type="email" name="email" required id="email">
+        <label for="letter">Текст письма:</label>
+          <textarea id="letter" name="letter" rows="5">В свободной форме</textarea>
+        </div>
+    </form>
   <div class="footer-social">
     <b class="main-footer-important">Давайте дружить, это выгодно!</b>
     <ul class="main-footer-list">

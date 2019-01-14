@@ -17,7 +17,9 @@
           <li class="site-navigation-item"><a href="#">Контакты</a></li>
         </ul>
         <ul class="user-navigation">
-          <li class="user-navigation-item">Корзина</li>
+          <li class="user-navigation-item">
+            <a class="basket" href="#">Корзина</a>
+            </li>
         </ul>
       </nav>
     </header>
@@ -52,7 +54,7 @@
             Мир никогда не будетпрежним
             после того как увидит ваш сайт!
           </p>
-          <a class="button" href="#">Заказать</a>
+          <a class="button" href="catalog.html">Заказать</a>
         </li>
         <li class="service-item">
           <h3 class="service-caption">Приложения</h3>
@@ -60,7 +62,7 @@
             Покорите топ-10 приложений в<br>
             AppStore и Google Play
           </p>
-          <a class="button" href="#">Заказать</a>
+          <a class="button" href="catalog.html">Заказать</a>
         </li>
         <li class="service-item">
           <h3 class="service-caption">Презентации</h3>
@@ -68,7 +70,7 @@
             Вы даже не подозреваете,<br>
             насколько вы изумительны!
           </p>
-          <a class="button" href="#">Заказать</a>
+          <a class="button" href="catalog.html">Заказать</a>
         </li>
       </ul>
     </section>
@@ -102,13 +104,23 @@
         <dd class="statistics-determination">100%</dd>
         <dt class="statistics-term">Минимальная предоплата</dt>
         <dd class="statistics-determination">50%</dd>
-        <li class="statistics-item">
       </dl>
       <img src="img/nerds-illustration-logo.png" width="360" height="208" alt="Логотип Нёрдс с иллюстрациями">
     </section>
   </div>
   </main>
     <footer class="main-footer">
+        <form class="write-us-form" action="http://echo" method="POST">
+          <legend class="write-us">Напишите нам</legend>
+            <label for="name">Ваше имя:</label>
+            <div class="write-us-box">
+              <input type="text" name="name" required id="name">
+            <label for="email">Ваш e-mail:</label>
+              <input type="email" name="email" required id="email">
+            <label for="letter">Текст письма:</label>
+              <textarea id="letter" name="letter" rows="5">В свободной форме</textarea>
+            </div>
+        </form>
       <div class="footer-social">
         <b class="main-footer-important">Давайте дружить, это выгодно!</b>
         <ul class="main-footer-list">
